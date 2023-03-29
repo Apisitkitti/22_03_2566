@@ -54,12 +54,12 @@ public class Cell : MonoBehaviour
         );
     }
 
-    public void  SetStatus(bool isAlive, bool isFixed, bool isTarget)
+    public void SetStatus(bool isAlive, bool isFixed, bool isTarget)
     {
         this._status.isAlive = isAlive;
         this._status.isFixed = isFixed;
         this._status.isTarget = isTarget;
-        UpdateColor();
+        this.UpdateColor();
     }
 
     public void ToggleStatus()
@@ -82,5 +82,4 @@ public class Cell : MonoBehaviour
     {
         return this._status.isTarget;
     }
-
 }
